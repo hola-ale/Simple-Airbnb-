@@ -1,0 +1,15 @@
+<h1>All our Flats(<%= Flat.count %>)</h1>
+
+<div class="flats">
+  <% @flats.each do |flat| %>
+    <div class="flat">
+      <h3><%= flat.name %></h3>
+      <p><%= flat.address %></p>
+      <p><%= flat.number_of_guests %></p>
+      <p><%= flat.price_per_night %></p>
+    </div>
+  <% end %>
+
+  <!-- link do edit -->
+  <!-- link do delete -->
+</div>
